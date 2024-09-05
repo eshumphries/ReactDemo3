@@ -23,14 +23,16 @@ class App extends React.Component {
             </ul>
           </nav>
         </div>
-        <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route path="/about">
-            <About/>
-          </Route>
-        </Switch>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home/>
+            </Route>
+            <Route path="/about">
+              <About/>
+            </Route>
+          </Switch>
+        </Router>
       </div>
     );
   }
